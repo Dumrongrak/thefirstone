@@ -1,15 +1,17 @@
 import React from "react";
+import { GrLocationPin } from "react-icons/gr";
+
 
 const Card = ({name,type,rating,address,image,info}) => {
     return (
-        <dev>
-            <h1>{name}</h1>
-            <img src={image} height="400" width="600" ></img>
-            <h2>Type:{type}</h2>
-            <h2>Location: {address}</h2>
-            <h2>Rating: {rating} / 5</h2>
-            <text>{info}</text>
-        </dev>
+        <div className="card-box">
+            <h2>{name}</h2>
+            <img src={image} alt={name} className="card-img"></img>
+            <p className="card-type">Type: {type}</p>
+            <p className="card-address"><GrLocationPin/> {address}</p>
+            <p className="card-rating">Rating: {rating} / 5</p>
+            <p className="card-info">{info}</p>
+        </div>
     );
 };
 export default Card;

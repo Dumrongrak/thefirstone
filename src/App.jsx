@@ -9,7 +9,8 @@ import busnoodle from "/public/restaurant/busnoodles.jpeg"
 function App() {
 
   return (
-    <>
+    <div className="container">
+        <h1>The Authentic Thai artistry of Helsinki</h1>
         <Card name={"Krung Thep Thai Bistro - Kalasatama"}
               image={krungthep}
               type={"Thai Dining"}
@@ -38,16 +39,15 @@ function App() {
               address={"Urho Kekkosen katu 1 E-floor, 00100 Helsinki"}
               info={"The restaurant is located inside Kamppi Shopping Centre, in the city centre of Helsinki, Finland. It specializes in Thai and Asian street food and serves both lunch and dinner.The menu offers a variety of Thai dishes, including Pad Thai, Tom Yum Goong, green curry, papaya salad and crispy pork. These dishes are known for their rich flavors, aromatic ingredients and different levels of spiciness."}
         ></Card>
-        <Card name={"Bus noodles(Kumphawapi Kitchen)"}
+        <Card name={"\nBus noodles(Kumphawapi Kitchen)"}
               image={busnoodle}
               type={"Thai Street food"}
               rating={10}
               address={"Kinorinne 1, 01600 Vantaa"}
-              info={"**Kumphawapi Kitchen – Restaurant Introduction**\n" +
-                  "\n" +
-                  "Kumphawapi Kitchen is a Thai restaurant that offers a taste of local Thai cuisine. It is a place where customers can enjoy delicious food in a welcoming atmosphere. The restaurant is a great choice for those who want to experience Thai food and local flavors."}
+              info={"One of the interesting things about this business is that it serves food from a vehicle, making it different from a traditional restaurant.Kumphawapi Kitchen offers an affordable option for people who want to enjoy Thai food without spending too much money. It is a great choice for customers who are looking for tasty food at reasonable prices.Thai food is well known for its rich flavors and variety of dishes. This makes it a great option for people who enjoy delicious and flavorful meals.In conclusion, Kumphawapi Kitchen is worth considering for anyone who loves Thai food, wants to save money, and prefers a casual dining experience."}
         ></Card>
-    </>
+
+    </div>
   )
 }
 export default App;
